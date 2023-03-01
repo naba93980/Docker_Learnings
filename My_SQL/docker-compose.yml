@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  database: 
+    container_name: mysql-form-hub-be
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=form_hub_database
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
+
+    
