@@ -5,3 +5,6 @@ normalize.css
 info
 MVC.png
 .vscode
+**.class
+target/
+.mvn/
